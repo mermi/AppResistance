@@ -5,11 +5,11 @@
 label:not([for])  {
   display: block;
   vertical-align: middle;
-  width: 21rem;
+  width: 6rem;
   height: 1.3rem;
   position: relative;
   background: none;
-  margin-top: 19px;
+  margin-top: 14px;
 }
 
 label:not([for]) input[type="checkbox"],

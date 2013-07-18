@@ -20,7 +20,7 @@ margin-left: -45px;}
 #calcul{ width:54.6%; height:6%; float:left;}
 #resultat{ width:54.6%; height:60px;  float:left;margin-left: 8px;}
 #information{width:54.6%;height:6%; border:2px solid #999; float:left;}
-#resistance{float:left;width:54.3%; height:200px; padding:2px;margin-left: 8px;}
+#resistance{float:left;width:54.3%; padding:2px;margin-left: 8px;}
 #container2{
 text-align:center;
 float:left;
@@ -60,7 +60,7 @@ left:155px;border-radius:3px;}
 	height: auto;
 }
 
-#resistance{height:250px;}
+#resistance{height:205px;}
 @media screen and (max-width:480px){
 #car1 , #car2 , #car3  { height:39px;margin-left:14px;
 	width: 8px;top:-49px;left:40px;}

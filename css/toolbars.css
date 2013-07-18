@@ -3,7 +3,7 @@
 * ---------------------------------- */
 
 [role="toolbar"] {
-  height: 4rem;
+  height: 3rem;
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -29,7 +29,7 @@
 
 [role="toolbar"] button {
   width: 5.5rem;
-  height: 4rem;
+  height: 3rem;
   border: none;
   font-size: 0;
   background: transparent no-repeat 50% 50%;
