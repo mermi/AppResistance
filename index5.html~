@@ -1,28 +1,28 @@
 <!DOCTYPE html>
-<html>
 <head>
-<title>Color-Resistance</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="stylesheet" type="text/css" href="css/style.css">
+<title>5 Anneaux </title>
+<link rel="stylesheet" type="text/css" href="css/style5.css">
 <link rel="stylesheet" type="text/css" href="css/headers.css">
 <link rel="stylesheet" type="text/css" href="css/switches.css">
 <meta charset="utf-8">
 <link rel="stylesheet" href="css/toolbars.css">
+<style type="text/css">
 
-
-  <style>
-    html, body {
+html, body {
       margin: 0;
       padding: 0;
       font-size: 10px;
-      background-color: #fff;
     }
-
-    body {
-     background: none;
+      body {
+      background: none;
     }
-
+    section[role="region"] {
+      margin-bottom: 0.5rem;
+      position: relative;
+    }
+    h3{
+      text-align: left;
+    }
     /* Base icons */
     [role="toolbar"] .pack-icon-reply{background-image: url(images/icons/reply.png);}
     [role="toolbar"] .pack-icon-mark {
@@ -45,29 +45,14 @@
     [role="toolbar"] .pack-icon-delete {
       background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo4NDA1RDQxQUE3MjA2ODExODhDNkE3NjAxQjM4MUZDNSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpDOUMyRkJBM0REODYxMUUxQjVDNEE4QjczREVCRENENCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpDOUMyRkJBMkREODYxMUUxQjVDNEE4QjczREVCRENENCIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjk4MjBGQzc5QjkyMDY4MTE4OEM2QjcwQTAwNDE1NjQ1IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjg0MDVENDFBQTcyMDY4MTE4OEM2QTc2MDFCMzgxRkM1Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+PB4wWgAAANFJREFUeNpi/P//P8NAAsZRBww1B7ACsSMQuwCxJhBzAPEPIL4OxHuAeD8Q/6amA2SB2AyImaB8OSDuAeIdQHwASZ0HEDsAcQkQP4KK/QPiU0D8GK8LQA7AgQOA+Od/ygBIvx8eO/CGwB0gVqZCNIPMUSUnCt5RMa0JDdlcsBuJ7YrGJ1bMlRIHIEsyovGJFWPEZwETwwCDUQeMOmDUAaMOGHXAkHJAGgViVKkNya7yKQmBkxRafojSEOACYlNoc5xU8BvqgR+jPaNRB+ADAAEGAKG8wdkMfRTuAAAAAElFTkSuQmCC);
     }
-
-      html, body {
-      margin: 0;
-      padding: 0;
-      font-size: 10px;
-    }
-      body {
-      background: none;
-    }
-    section[role="region"] {
-      margin-bottom: 0.5rem;
-      position: relative;
-    }
-    h3{
-      text-align: left;
-    }
-  </style>
+</style>
 <script langage="javascript">
 	function init(){
 	window.document.getElementById('car1').style.backgroundColor="#000";
 	window.document.getElementById('car2').style.backgroundColor="#000";
 	window.document.getElementById('car3').style.backgroundColor="#000";
-	window.document.getElementById('car4').style.backgroundColor="#D4AF37";
+	window.document.getElementById('car4').style.backgroundColor="#000"
+	window.document.getElementById('car5').style.backgroundColor="#D4AF37";
 	window.document.getElementById('container2').display = "block";
 	window.document.getElementById('tolerance').display = "none";
 	window.document.getElementById('calc').value = "0000";
@@ -96,17 +81,22 @@
 	}
 	else if(document.form1.etat[3].checked)
 	{
+		window.document.getElementById('container2').style.display = "block";
+		window.document.getElementById('tolerance').style.display = "none";
+		//d=document.form1.etat[3].value;
+		//alert(d);
+	}
+	else if(document.form1.etat[4].checked)
+	{
 		window.document.getElementById('container2').style.display = "none";
 		window.document.getElementById('tolerance').style.display = "block";
 		//d=document.form1.etat[3].value;
 		//alert(d);
 	}
-	
 }
 	function couleur(name){
 	//alert(name);
-
-		if(document.form1.etat[0].checked)
+	if(document.form1.etat[0].checked)
 	{
 	window.document.getElementById('car1').style.backgroundColor = name;
 }
@@ -118,9 +108,10 @@
 	{
 		window.document.getElementById('car3').style.backgroundColor = name;
 	}
-	
+	else if(document.form1.etat[3].checked){
+		window.document.getElementById('car4').style.backgroundColor= name;
+	}
 }
-
 function rvb2hex(val){
 if (val.indexOf("rgb") >= 0) {
 var rgb_string = val.slice(val.indexOf('(') + 1,val.indexOf(')'));
@@ -136,20 +127,19 @@ return val;
 }
 function colorer(col){
 	//alert(col);
-	 window.document.getElementById('car4').style.backgroundColor = col;
+	 window.document.getElementById('car5').style.backgroundColor = col;
 	 //alert(document.getElementById('car4').style.backgroundColor);
-	 var c1 = rvb2hex(document.getElementById('car4').style.backgroundColor);
+	 var c1 = rvb2hex(document.getElementById('car5').style.backgroundColor);
 	 if( c1== '#D4AF37')
 		{
 			document.getElementById('toler').selectedIndex = 0;
 		}
-		var c2=rvb2hex(document.getElementById('car4').style.backgroundColor);
+		var c2=rvb2hex(document.getElementById('car5').style.backgroundColor);
 		if( c2== '#CECECE')
 		{
 			document.getElementById('toler').selectedIndex = 1;
 		}
 }
-
 
 	function showcalcul(id){
 		//alert(id);
@@ -157,8 +147,10 @@ function colorer(col){
 		var Vcar1=0;
 		var Vcar2=0;
 		var Vcar3=0;
+		var Vcar4=0;
 		var Val1="";
 		var Val2="";
+		var Val4="";
 		var s="";
 		var Nombre=0;
 		var M=0;
@@ -182,6 +174,11 @@ function colorer(col){
 			Val2=Vcar2.toString();
 			
 			}
+			conv4=rvb2hex(document.getElementById('car4').style.backgroundColor)
+			if(conv4 == c){
+				Vcar4=i;
+			Val4=Vcar4.toString();
+			}
 			conv3=rvb2hex(document.getElementById('car3').style.backgroundColor)
 			if(conv3 == c){
 			Vcar3=Math.pow(10,i);
@@ -191,7 +188,7 @@ function colorer(col){
 		}
 		//alert(Val1);
 		//alert(Val2);
-		s=Val1+Val2
+		s=Val1+Val2+Val4
 		//alert(s);
 		Nombre=parseInt(s);
 		M=Nombre*Vcar3;
@@ -228,16 +225,15 @@ function refresh()
 </script>
 </head>
 <body onload="init()" role="application">
-	
-<section role="region" class="skin-dark" >
+	<section role="region" class="skin-dark" >
     <header>
     <a href="home.html"><span class="icon icon-back">back</span></a>
-      <h1 align="center">4 anneaux</h1>
+      <h1>5 anneaux</h1>
 
     </header>
+   
   </section>
-
-<div id="menu">
+	<div id="menu">
 <div id="tolerance">
 	
 <div id="gold" onclick="colorer('#D4AF37')"></div>
@@ -269,9 +265,8 @@ function refresh()
 
 </div>
 <div id="resistance">
-	<canvas id="forme" width="300" height="50"></canvas>
+	<canvas id="forme" width="350" height="50"></canvas>
 	<script>
-	
 function roundRect(x, y, w, h, radius)
 {
   var canvas = document.getElementById("forme");
@@ -295,48 +290,49 @@ function roundRect(x, y, w, h, radius)
 }
 roundRect(5,5,180,40, 15);
 </script>
-		<div height="50px">
-	<div id="car1">	
+	<div height="50px">
+	<div id="car1" >	
 	
 	</div>
-	
 	<div id="car2">	
 	
-	</div>
-	
-	
+	</div>	
 	<div id="car3">	
 	
-	</div>
-	
-	
+	</div>	
 	<div id="car4">
 	</div>
-		
+    <div id="car5">
+	</div>	
 	</div>
-	
-	
+
+
 
 <form name="form1" id="forme1">
-	<label>
+		<label>
 	
 	<input name="example"  type="radio" id="etat" value="car1" onclick="verif()" checked>
 	<span>S1</span>
 	</label>
 	<label>
 	
-	<input name="example" type="radio" id="etat" value="car2" onclick="verif()"  >
+	<input name="example" type="radio" id="etat" value="car2"  onclick="verif()">
 	<span>S2</span>
 	</label>
 	<label>
 	
-	<input name="example" type="radio" id="etat" value="car3" onclick="verif()"  >
+	<input name="example" type="radio" id="etat" value="car3"  onclick="verif()">
 	<span>S3</span>
 	</label>
 	<label>
 	
-	<input name="example" type="radio" id="etat" value="car4" onclick="verif()"  >
+	<input name="example" type="radio" id="etat" value="car4"  onclick="verif()">
 	<span>S4</span>
+	</label>
+	<label>
+	
+	<input name="example" type="radio" id="etat" value="car4"  onclick="verif()">
+	<span>S5</span>
 	</label>
 </form>
 </div>
@@ -344,7 +340,7 @@ roundRect(5,5,180,40, 15);
 <textarea type="text" name="" id="textresult" disabled>1 k &#937 =1000 &#937 </textarea>
 </div>
 <div id="calcul">
-	<input type="text" size="10" name="calcul" id="calc" onclick="showcalcul('calc')"/>
+	<input type="range" size="10" name="calcul" id="calc" onclick="showcalcul('calc')"/>
 	<select id="unite">
 	<option>&#937 </option>
 	<option >K &#937 </option>
@@ -356,11 +352,9 @@ roundRect(5,5,180,40, 15);
 	</select>
 </div>
 </div>
-</div>
-
 <div role="toolbar">
     <ul>
-      <a href="resistance.html"><li style="margin-top: 5px;font-size: 17px;color: white;">Code To Color</li></a>
+      <a href="resistance5.html"><li style="margin-top: 5px;font-size: 17px;color: white;">Code To Color</li></a>
     </ul>
     <ul>
       

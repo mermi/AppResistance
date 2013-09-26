@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Tunisian Market Place </title>
+<style>
+button{width:600px;height: 400px;}
+</style>
+<script type="text/javascript" language="javascript">
+function go(){
+var request = window.navigator.mozApps.install('/manifest.webapp');
+request.onsuccess = function () {
+  // Enregistre l'objet App qui est renvoyé
+  var appRecord = this.result;
+  alert('Installation réussie !');
+};
+request.onerror = function () {
+  // Affiche le nom de l'erreur depuis l'objet DOMError
+  alert('Installation échouée, erreur : ' + this.error.name);
+};
+}
+</script>
+</head>
+<body>
+<button onclick="go();">Install</button>
+</body>
+</html>

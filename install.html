@@ -4,24 +4,43 @@
 <meta charset="utf-8"/>
 <title>Tunisian Market Place </title>
 <style>
-button{width:600px;height: 400px;}
 </style>
-<script type="text/javascript" language="javascript">
-function go(){
-var request = window.navigator.mozApps.install('/manifest.webapp');
-request.onsuccess = function () {
-  // Enregistre l'objet App qui est renvoyé
-  var appRecord = this.result;
-  alert('Installation réussie !');
-};
-request.onerror = function () {
-  // Affiche le nom de l'erreur depuis l'objet DOMError
-  alert('Installation échouée, erreur : ' + this.error.name);
-};
-}
-</script>
 </head>
 <body>
-<button onclick="go();">Install</button>
+<script>
+function install(ev) {
+  ev.preventDefault();
+  // define the manifest URL
+  var manifest_url = "https://github.com/mermi/AppResistance/blob/master/install.html";
+  // install the app
+  var installLocFind = navigator.mozApps.install(manifest_url);
+  installLocFind.onsuccess = function(data) {
+    // App is installed, do something
+  };
+  installLocFind.onerror = function() {
+    // App wasn't installed, info is in
+    // installapp.error.name
+    alert(installapp.error.name);
+  };
+};
+
+// get a reference to the button and call install() on click
+var button = document.getElementById('install');
+
+var installCheck = navigator.mozApps.checkInstalled("https://github.com/mermi/AppResistance/blob/master/install.html");
+// check whether the app defined in the above manifest file is installed
+installCheck.onsuccess = function() {
+  if(installCheck.result) {
+    button.style.display = "none";
+    // if it's already installed on the device, hide the install button, as we don't need it.
+  } else {
+    button.addEventListener('click', install, false);
+    // if it isn't, run the install code contained in the install() function
+  };
+};
+</script>
+<button id="install">
+  Install on FirefoxOS
+</button>
 </body>
 </html>
